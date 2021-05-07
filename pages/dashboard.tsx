@@ -1,10 +1,8 @@
 import { GetServerSideProps } from "next";
-import { destroyCookie } from "nookies";
 import { useContext, useEffect } from "react";
 import { Can } from "../components/Can";
 
 import { AuthContext } from "../context/AuthContext";
-import { useCan } from "../hooks/useCan";
 
 import { setupAPIClient } from "../services/api";
 import { api } from "../services/apiClient";
